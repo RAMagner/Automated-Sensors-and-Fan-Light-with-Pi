@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int iIndex = 0;
 	BlockChain bChain;
 	Block bOld(0, "");
-	if (argc == 2)
+	if (argc >= 2)
 	{
 		std::ifstream infile(argv[1]);
 		std::string line;
@@ -34,17 +34,13 @@ int main(int argc, char *argv[])
 		}
 		bChain = BlockChain(vChain);
 	}
+	
+	sData = argv[2];
+	sData += " ";
+	sData += argv[3];
 
 	cout << "Mining block 1..." << endl;
-	bChain.AddBlock(Block(++iIndex, ("Block " + to_string(iIndex) + " Data")));
-
-	cout << "Mining block 2..." << endl;
-	bChain.AddBlock(Block(++iIndex, ("Block " + to_string(iIndex) + " Data")));
-
-	cout << "Mining block 3..." << endl;
-	bChain.AddBlock(Block(++iIndex, ("Block " + to_string(iIndex) + " Data")));
-
-	bChain.PrintChain();
+	bChain.AddBlock(Block(++iIndex, sData));
 
 	return 0;
 }
