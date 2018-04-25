@@ -14,3 +14,6 @@ Revision History
 ==========================================================================================
 v 1.0 - Initially Released based on code by Dave Nash, edited to include chain storage and
 		some data retrieval
+		
+v 2.0 - Added sensors.py, ACT.py and updated main.cpp to reflect inclusion of the python
+		scripts to control the raspberry pis
