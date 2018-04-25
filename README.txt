@@ -1,7 +1,7 @@
 ==========================================================================================
 README
 ==========================================================================================
-BlockChain v1.0
+Automated Sensors and Fan/Light with Pi (formerly BlockChain) v2.0
 
 Code originally by Dave Nash
 http://davenash.com/2017/10/build-a-blockchain-with-c/
